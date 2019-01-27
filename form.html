@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="jqueryForm.js"></script>
+     <style>
+       #main{
+           margin:0px;
+           padding:0px;
+           width:500px;
+           background:#fff;
+           border:1px solid #000;
+           margin:auto;
+           position: relative;
+           top:50px;
+       }
+       h1{
+           color:darkcyan;
+           margin-left:50px;
+       }
+
+       .para{
+           color:dimgrey;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           margin:10px;
+           padding:5px;
+       }
+       .inpu{
+           width:90%;
+           padding:10px;
+           margin-left:10px;
+           border-radius:5px;
+       }
+       h4{
+           color:#f00;
+           margin:10px;
+       }
+       #btn{
+           margin:25px;
+           width:100px;
+           height:50px;
+           border-radius: 5px;
+           background-color:royalblue;
+           color:#fff;
+           font-size: 18px;
+           font-weight: bold;
+
+       }
+     </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Jquery Form Validation</h1>
+        <div>
+            <p class="para">USERNAME</p>
+            <input type="text" name="username" id="user" class="inpu"/>
+            <h4 class="usern">Enter Username</h4>
+        </div>
+        <div>
+                <p class="para">Email</p>
+                <input type="text" name="username" id="email" class="inpu"/>
+                <h4 class="email">Enter Email</h4>
+            </div>
+        <div>
+                <p class="para">Password</p>
+                <input type="text" name="username" id="pass" class="inpu"/>
+                <h4 class="pass">Enter Password</h4>
+            </div>
+        <button id="btn">Submit</button>
+    </div>
+</body>
+</html>

@@ -5,37 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-     <form action="">
-         <div>
-             <p>UserName</p>
-             <input type ="text" name="username" id="username" />
-           
-         </div>
-         <div>
-            <p>LastName</p>
-            <input type ="text" name="lastname" id="lastname" />
-          
-        </div>
-        <p>Password</p>
-        <input type ="text" name="lastname" id="password" />
-      
-    </div>
-    <p>Confirm Password</p>
-            <input type ="text" name="lastname" id="cpassword" />
-          
-        </div>
-        <p>Mobile NUmber</p>
-            <input type ="text" name="lastname" id="mobile" />
-          
-        </div>
-        <p>Email</p>
-            <input type ="text" name="lastname" id="email" />
-          
-        </div>     
-         <input type="button" name="button" id="save" value ="submit" onclick ="onClick();"/>
-     </form>
+        <div id="main">
+            <form action="">
+                <div class="forms">
+                    <p>UserName:</p>
+                    <div>
+                    <input type ="text" name="username" id="username" />
+                    <span id="user"></span>
+                   </div>
+                </div>
+                <div class="forms">
+                    <p>LastName :</p>
+                    <input type ="text" name="lastname" id="lastname" />
+                    <span id="last"></span>
+                </div>
+                <div class="forms">
+                <p>Password :</p>
+                <input type ="text" name="lastname" id="password" />
+                <span id="pass"></span>
+                 </div>
+                 <div class="forms">
+                <p>Confirm Password :</p>
+                <input type ="text" name="lastname" id="cpassword" />
+                <span id="cpass"></span>
+                </div>
+                <div class="forms">
+                <p>Mobile NUmber :</p>
+                 <input type ="text" name="lastname" id="mobile" />
+                 <span id="Mobilenumber"></span>
+                </div>
+                <div class="forms">
+                <p>Email :</p>
+                <input type ="text" name="lastname" id="email" />
+                <span id="emaile"></span>
+                </div> 
+            </form>
+            <input type="button" name="button" id="save" value ="SUBMIT"  class="btn" onclick ="onClick();"/>
+        </div>    
      <script src="form.js"></script> 
 </body>
 </html>

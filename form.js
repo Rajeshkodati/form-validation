@@ -1,84 +1,91 @@
 
 function onClick(){
-  var username =document.getElementById("username").value;
+  var firstname =document.getElementById("username").value;
   var lastname =document.getElementById("lastname").value;
   var password =document.getElementById("password").value;
   var cpassword =document.getElementById("cpassword").value;
   var mobile =document.getElementById("mobile").value;
   var email =document.getElementById("email").value;
 
+
+           
+  
+
+  
+
             //usrename details
 
            
-                if(username ==""){
-                    alert("Empty");
+                if(firstname ==""){
+                    document.getElementById("user").innerHTML ="Enter First Name";
                     return false;
+                    
                 }
-                    if(!isNaN(username)){
-                        alert("enter only characters");
-                        return false;s
+                  
+                
+                    if(!isNaN(firstname)){
+                        document.getElementById("user").innerHTML ="Enter Only Characters";
+                        return false;
                     }
 
-                if((username.length<4) || (username.length>15)){
-                    console.log("enter minimum character")
+                if((firstname.length<4) || (firstname.length>15)){
+                    document.getElementById("user").innerHTML ="Character should be 4 to 15 length";
                     return false;
                 
                     }
 
                     if(lastname ==""){
-                        alert("Enter lastname ");
+                        document.getElementById("last").innerHTML ="Enter Last Name";
                         return false;
                     }
                         if(!isNaN(lastname)){
-                            alert("enter only characters");
+                            document.getElementById("last").innerHTML ="Enter Only Characters";;
                             return false;s
                         }
     
                     if((lastname.length<4) || (lastname.length>15)){
-                        console.log("enter minimum character")
+                        document.getElementById("last").innerHTML ="Character should be 4 to 15 length";
                         return false;
                     
                         }
                  if(password ==""){
-                    alert("Eneter password");
+                    document.getElementById("pass").innerHTML ="Enter Password";
                     return false;
                 }
 
 
                 if((password.length<4) || (password.length>15)){
-                    console.log("enter minimum character")
+                    document.getElementById("pass").innerHTML ="Length shuold be 4 to 15 characters";
                     return false;
                 
                     }
                 if(password !=cpassword){
-                    alert("password missmatch")
+                    document.getElementById("cpass").innerHTML ="Password MissMatch";
                 }    
                     if(cpassword ==""){
-                        alert("enter cpassword");
+                        document.getElementById("cpass").innerHTML ="Enter Confirm Password";
                         return false;
                     }
 
                    //enter mobile 
                         if(mobile ==""){
-                            alert("Empty");
+                            document.getElementById("Mobilenumber").innerHTML ="Enter Mobile Number";
                             return false;
                         }
-                            if(isNaN(mobile)=10){
-                                alert("enter only number");
+                       if(isNaN(mobile)=10){
+                                document.getElementById("Mobilenumber").innerHTML ="Enter only 10 Digits";
                                 return false;s
                             }
         
              //email deatails
                  if(email ==""){
-                    alert("enter email");
+                    document.getElementById("emaile").innerHTML ="Enter Email address";
                     return false;
                 }
-
-
-           
                                                         
                 else {
-                    alert("ok");
+                    alert("All Fields Enter")
+                    return true;
    }
    
 }
