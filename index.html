@@ -9,43 +9,44 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-        <div id="main">
-            <form action="">
-                <div class="forms">
-                    <p>UserName:</p>
-                    <div>
-                    <input type ="text" name="username" id="username" />
-                    <span id="user"></span>
-                   </div>
+    <div id="main">
+        <form action="">
+            <div class="forms">
+                <p>UserName:</p>
+                <div>
+                <input type ="text" name="username" id="username" onblur='firstNameValidation()' />
+                <span id="user"></span>
                 </div>
-                <div class="forms">
-                    <p>LastName :</p>
-                    <input type ="text" name="lastname" id="lastname" />
-                    <span id="last"></span>
-                </div>
-                <div class="forms">
+            </div>
+            <div class="forms">
+                <p>LastName :</p>
+                <input type ="text" name="lastname" id="lastname" onblur='lastNameValidation()' />
+                <span id="last"></span>
+            </div>
+            <div class="forms">
                 <p>Password :</p>
-                <input type ="text" name="lastname" id="password" />
+                <input type ="text" name="lastname" id="password" onblur='passwordValidation()'/>
                 <span id="pass"></span>
-                 </div>
-                 <div class="forms">
+            </div>
+            <div class="forms">
                 <p>Confirm Password :</p>
-                <input type ="text" name="lastname" id="cpassword" />
+                <input type ="text" name="lastname" id="cpassword" onblur='ConfirmValidation()' />
                 <span id="cpass"></span>
-                </div>
-                <div class="forms">
+            </div>
+            <div class="forms">
                 <p>Mobile NUmber :</p>
-                 <input type ="text" name="lastname" id="mobile" />
-                 <span id="Mobilenumber"></span>
-                </div>
-                <div class="forms">
+                 <input type ="text" name="lastname" id="mobile" onblur='mobileValidation()'/>
+                <span id="Mobilenumber"></span>
+            </div>
+            <div class="forms">
                 <p>Email :</p>
-                <input type ="text" name="lastname" id="email" />
+                <input type ="text" name="lastname" id="email" onblur='emailValidation()'/>
                 <span id="emaile"></span>
-                </div> 
-            </form>
-            <input type="button" name="button" id="save" value ="SUBMIT"  class="btn" onclick ="onClick();"/>
-        </div>    
+            </div> 
+        </form>
+        <input type="button" name="button" id="save" value ="SUBMIT"  class="btn" onclick ="onValidation();"/>
+        <input type="button" name="button" id="reset" value ="Reset"  class="reset" onclick ="onResetValidation();"/>
+    </div>    
      <script src="form.js"></script> 
 </body>
 </html>
